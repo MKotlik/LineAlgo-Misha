@@ -4,6 +4,22 @@ from draw import *
 screen = new_screen()
 color = [0, 255, 0]
 
+# Windows 2000
+color = [255, 0, 0]
+redY = 500
+for n in range(240):
+    draw_line(0, redY - n, 240, redY-n, screen, color)
+blueY = 240
+for n in range(240):
+    draw_line(0, redY - n, 240, redY-n, screen, color)
+greenY = 500
+for n in range(240):
+    draw_line(0, redY - n, 240, redY-n, screen, color)
+yellowY = 500
+for n in range(240):
+    draw_line(0, redY - n, 240, redY-n, screen, color)
+
+
 """
 # Dank Memes
 # M
@@ -36,7 +52,7 @@ draw_line(410, 150, 410, 200, screen, color)
 draw_line(410, 200, 490, 200, screen, color)
 """
 
-
+"""
 # Demonstration #
 # Draw grid lines
 color = [255, 255, 255]
@@ -60,7 +76,7 @@ color = [0, 255, 0]
 draw_line(250, 250, 500, 500 - 375, screen, color)  # Octant8
 draw_line(250, 250, 0, 375, screen, color)  # Octant4
 plot(screen, [255, 255, 255], 250, 250)
-
+"""
 
 """
 # Test Code #
@@ -90,6 +106,6 @@ draw_line_octant8(0,500,400,400, screen, color)
 """
 
 
-# display(screen)
-save_ppm(screen, "demo.ppm")
-# save_extension(screen, 'img.png')
+display(screen)
+# save_ppm(screen, "demo.ppm")
+save_extension(screen, 'img.png')
