@@ -5,19 +5,26 @@ screen = new_screen()
 color = [0, 255, 0]
 
 # Windows 2000
+# Red
 color = [255, 0, 0]
 redY = 500
 for n in range(240):
     draw_line(0, redY - n, 240, redY-n, screen, color)
+# Blue
+color = [0, 0, 255]
 blueY = 240
 for n in range(240):
-    draw_line(0, redY - n, 240, redY-n, screen, color)
+    draw_line(0, blueY - n, 240, blueY-n, screen, color)
+# Green
+color = [0, 255, 0]
 greenY = 500
 for n in range(240):
-    draw_line(0, redY - n, 240, redY-n, screen, color)
-yellowY = 500
+    draw_line(260, redY - n, 500, redY-n, screen, color)
+# Yellow
+color = [255, 255, 0]
+yellowY = 240
 for n in range(240):
-    draw_line(0, redY - n, 240, redY-n, screen, color)
+    draw_line(260, redY - n, 500, redY-n, screen, color)
 
 
 """
