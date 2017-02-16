@@ -2,7 +2,32 @@ from display import *
 from draw import *
 
 screen = new_screen()
-color = [ 0, 255, 0 ]
+color = [0, 255, 0]
+
+# Demonstration #
+# Draw grid lines
+color = [255, 255, 255]
+draw_line(250, 500, 250, 0, screen, color)
+draw_line(0, 250, 500, 250, screen, color)
+# Draw octant lines
+color = [0, 0, 255]
+draw_line(0, 0, 500, 500, screen, color)
+draw_line(0, 500, 500, 0, screen, color)
+# Draw demo lines in each octant
+color = [255, 0, 255]
+draw_line(250, 250, 375, 500, screen, color)  # Octant2
+draw_line(250, 250, 500 - 375, 0, screen, color)  # Octant6
+color = [255, 255, 0]
+draw_line(250, 250, 375, 0, screen, color)  # Octant7
+draw_line(250, 250, 500 - 375, 500, screen, color)  # Octant3
+color = [0, 255, 255]
+draw_line(250, 250, 500, 375, screen, color)  # Octant1
+draw_line(250, 250, 0, 500 - 375, screen, color)  # Octant5
+color = [0, 255, 0]
+draw_line(250, 250, 500, 500 - 375, screen, color)  # Octant8
+draw_line(250, 250, 0, 375, screen, color)  # Octant4
+plot(screen, [255, 255, 255], 250, 250)
+
 
 """
 # Test Code #
@@ -32,5 +57,6 @@ draw_line_octant8(0,500,400,400, screen, color)
 """
 
 
-display(screen)
-save_extension(screen, 'img.png')
+# display(screen)
+save_ppm(screen, "demo.ppm")
+# save_extension(screen, 'img.png')
