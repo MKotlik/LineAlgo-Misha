@@ -4,6 +4,39 @@ from draw import *
 screen = new_screen()
 color = [0, 255, 0]
 
+"""
+# Dank Memes
+# M
+draw_line(10, 100, 10, 300, screen, color)
+draw_line(10, 300, 50, 200, screen, color)
+draw_line(50, 200, 90, 300, screen, color)
+draw_line(90, 100, 90, 300, screen, color)
+# e
+draw_line(110, 100, 110, 200, screen, color)
+draw_line(110, 100, 190, 100, screen, color)
+draw_line(110, 200, 190, 200, screen, color)
+draw_line(190, 200, 190, 150, screen, color)
+draw_line(190, 150, 110, 150, screen, color)
+# m
+draw_line(210, 100, 210, 200, screen, color)
+draw_line(210, 200, 250, 150, screen, color)
+draw_line(250, 150, 290, 200, screen, color)
+draw_line(290, 100, 290, 200, screen, color)
+# e
+draw_line(310, 100, 310, 200, screen, color)
+draw_line(310, 100, 390, 100, screen, color)
+draw_line(310, 200, 390, 200, screen, color)
+draw_line(390, 200, 390, 150, screen, color)
+draw_line(390, 150, 310, 150, screen, color)
+# s
+draw_line(410, 100, 490, 100, screen, color)
+draw_line(490, 100, 490, 150, screen, color)
+draw_line(490, 150, 410, 150, screen, color)
+draw_line(410, 150, 410, 200, screen, color)
+draw_line(410, 200, 490, 200, screen, color)
+"""
+
+
 # Demonstration #
 # Draw grid lines
 color = [255, 255, 255]
